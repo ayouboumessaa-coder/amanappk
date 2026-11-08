@@ -1,0 +1,12 @@
+#aman-shield{display:none}
+.aman-hidden #aman-shield{display:grid;place-items:center;position:fixed;inset:0;z-index:2147483647;background:var(--bg,#1a0b24);color:var(--tx,#fff);font:700 1.1rem Tajawal,Montserrat,sans-serif;text-align:center;padding:24px}
+.aman-hidden body>*:not(#aman-shield){filter:blur(24px)}
+.community-post,.community-comment,.community-ai-out{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.community-ai-out textarea,.community-ai-out input{-webkit-user-select:text;user-select:text}
+.community-photo{-webkit-user-drag:none;pointer-events:auto}
+@media print{body>*{display:none!important}body::after{content:"AMAN – المحتوى غير قابل للطباعة / Contenu non imprimable / Printing disabled";display:block;padding:40px;font:700 18px sans-serif;text-align:center}}
+.community-ai-read{margin-top:14px;border-top:1px solid var(--bd);padding-top:12px}.community-ai-read summary{cursor:pointer;font-weight:700;color:var(--ac);min-height:32px}
+.community-ai-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}.community-ai-translate{display:inline-flex;gap:6px;align-items:center}
+.community-ai-translate select{font:inherit;background:var(--card);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:8px}
+.community-ai-out:not(:empty){border:1px dashed var(--ac);border-radius:12px;padding:12px 14px;margin-top:8px;background:var(--bg)}
+.community-ai-write{border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin:-6px 0 16px}
